@@ -1,0 +1,8 @@
+navigate to https://www.naukri.com/
+and then click on Register
+pull the first record from table registration and do the registration, also there is a column work_status in the table
+that column data just use for reference purpose to click or select that option while doing registration, also add missing data using your knowledge. If user is already registered, modify email to unique and get it registered and don't click on Register just fill the data.
+
+And then read attached postman collection to understand api contract and make a login call with the necessary information and confirm if login call is success. 
+
+Once confirmed, finally new registered details of email and password write to newdata.xlsx file in appropriate columns

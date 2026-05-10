@@ -1,0 +1,26 @@
+Debugging steps when there are failures in configuring MCP servers
+You need to check logs of Claude MCP if there is an issue with any MCP server configuration.
+
+
+
+you might want to check below paths to get  exact file path for Claude logs on Windows,
+
+C:\Users\YourUsername\AppData\Local\Claude\Logs\
+
+C:\Users\YourUsername\AppData\Roaming\Claude\Logs\
+
+once you know the path, then pass the path in the below command from Windows Powershell to get real time logs
+
+Get-Content -Tail 20 -Path "C:\Users\YourUsername\Library\Logs\Claude\mcp*.log" -Wait
+
+
+
+
+Once you get the log file, copy the content or attach the log file back to claude.ai itself and ask why you are not able to install particular (playwright) mcp server. It will tell you fixes by scanning your logs.
+
+
+
+
+#In MAC/Unix just give below command to get real time logs.
+
+tail -n 20 -F ~/Library/Logs/Claude/mcp*.log
